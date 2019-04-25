@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-04-2019 a las 07:25:34
+-- Tiempo de generación: 25-04-2019 a las 02:35:40
 -- Versión del servidor: 10.1.38-MariaDB
--- Versión de PHP: 7.3.4
+-- Versión de PHP: 7.3.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -37,6 +37,7 @@ CREATE TABLE `madres` (
   `nacionalidad` text COLLATE latin1_spanish_ci NOT NULL,
   `inicio_embarazo` text COLLATE latin1_spanish_ci NOT NULL,
   `num_exterior` text COLLATE latin1_spanish_ci NOT NULL,
+  `calle` text COLLATE latin1_spanish_ci NOT NULL,
   `colonia` text COLLATE latin1_spanish_ci NOT NULL,
   `cod_postal` text COLLATE latin1_spanish_ci NOT NULL,
   `habitacion` text COLLATE latin1_spanish_ci NOT NULL,
@@ -49,11 +50,8 @@ CREATE TABLE `madres` (
 -- Volcado de datos para la tabla `madres`
 --
 
-INSERT INTO `madres` (`id`, `nombre`, `a_paterno`, `a_materno`, `fecha_nacimiento`, `nacionalidad`, `inicio_embarazo`, `num_exterior`, `colonia`, `cod_postal`, `habitacion`, `med_nombre`, `med_a_paterno`, `med_a_materno`) VALUES
-(4, 'chorizo', 'chorizote', 'chorizito', '2019-04-17', 'qwasf', '2019-04-26', 'sdf', 'sdv', 'asdfa', 'asdf', 'asdf', 'asdf', 'asdf'),
-(5, 'asdg', 'aegf', 'adsf', '2019-04-16', 'asdf', '2019-04-11', 'asdv', 'asdv', 'sdv', 'advs', 'asdv', 'asdv', 'asdv'),
-(6, 'prueba', 'prueba', 'prueba', '1999-01-01', 'ssds', '2000-02-02', 'hkb', 'jk', 'bh', 'jbk', 'bhj', 'bk', 'dfb'),
-(9, 'Manuel Alejandro', 'Robledo', 'Briones', '1997-08-08', 'Mexicana', '2018-01-01', '133', 'Las Camelinas', '48147', '28', 'Mauricio', 'AlemÃ¡n', 'Paez');
+INSERT INTO `madres` (`id`, `nombre`, `a_paterno`, `a_materno`, `fecha_nacimiento`, `nacionalidad`, `inicio_embarazo`, `num_exterior`, `calle`, `colonia`, `cod_postal`, `habitacion`, `med_nombre`, `med_a_paterno`, `med_a_materno`) VALUES
+(10, 'Manuel Alejandro', 'Robledo', 'Briones', '1997-08-08', 'Mexicana', '2018-10-01', '133', 'Tercera Privada de Las Camelinas', 'Las Camelinas', '78147', '27', 'El Dr', 'Simi', 'Simi :v');
 
 -- --------------------------------------------------------
 
@@ -92,7 +90,7 @@ ALTER TABLE `madres`
 -- AUTO_INCREMENT de la tabla `madres`
 --
 ALTER TABLE `madres`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
